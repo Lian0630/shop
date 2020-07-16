@@ -1,0 +1,15 @@
+.footer{
+	width: 1500px;
+
+	margin: 0 auto;
+	overflow: hidden;
+}
+			
+
+ul {float:left;}
+.bottom-mid{overflow: hidden;padding-left:300px;}
+		
+.foot{width: 100%; padding: 50px; text-align: center;background-color: #171717;font-weight: bold;color: white;}
+.bottom-mid{background-image: url(../images/index/down1.jpg);height: 200px;}
+.bottom{background-color:#696969;font-weight: bold;color: #FFFFFF ;}
+.bottom-down{color:#303030;padding-top:10px;}

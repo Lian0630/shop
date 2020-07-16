@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8" />
+		<title>連的交易所</title>
+		<!--核心文件-->
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/rightBox.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="../css/projectAll.css">
+		<script src="../js/header.js" type="text/javascript"></script>
+		<script src="../js/footer.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="../css/header.css">
+		<link rel="stylesheet" href="../css/footer.css">
+		
+		<script src="../js/product.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+	<style type="text/css">
+		.login-title{display: none;}
+	
+		
+		.top-item{position: relative;min-height: 1px;padding-right: 15px;padding-left: 15px;}
+		.top-item {color: #777777;line-height: 40px;}	
+		
+		.article{ background-image:url(../images/index/bg4.jpg); width:1500px; height:600px;overflow: hidden;margin:0 auto;}
+		.article-photo{width:300px;;height:450px;float:left;margin-left: 50px;margin-top: 50px;}
+		.article-product{
+			width:250px;
+			height:250px;
+			float:left;
+			margin-top: 50px;
+			background-color: rgba(255,255,255,0.55);
+			border-radius: 10px;
+			}
+		
+			
+	</style>
+		
+		
+	</head>
+
+	<body>
+		<!-- 右側懸浮 -->
+		<div class="right_box">
+			
+		</div>
+		<!-- 右側懸浮結束 -->
+	
+		<!--頭部-->
+		<header class="header">
+			<!--logo-->
+			<div>
+				<a href="index.html">
+					<img src="../images/index/logo.png" />
+				</a>
+			</div>
+			
+
+		</header>
+		<!--頭部结束-->
+	
+
+		<!--商品資訊開始-->
+		<div class="article">
+			
+			<div class="article-photo">
+
+				<div data="1">
+					<img id="img1-big" src="../images/money/bit/1.jpg" width="70%" />
+				</div>
+				<div data="2">
+					<img id="img2-big" src="../images/money/bit/2.jpg" width="70%" />
+				</div>
+				<div data="3">
+					<img id="img3-big" src="../images/money/bit/3.jpg" width="70%" />
+				</div>
+	
+			</div>
+
+			<div class="article-product">
+				<h3 id="money-title">比特幣</h3>
+				<h4><small id="money-sell-point">全世界第一個虛擬貨幣，適合用於保值！</small></h4>
+				<div>
+					<small>貨幣現買價格：</small> $<span id="money-price">4899</span>.00TWD
+				</div>
+				<form role="form">
+					<div>
+						<label for="num">數量：</label>
+						<input id="numDown" type="button" value="-" class="num-btn" />
+						<input id="num" type="text" size="2" readonly="readonly" class="num-text" value="1">
+						<input id="numUp"class="num-btn" type="button" value="+" />
+					</div>
+				
+					<div>
+
+						<button id="btn-add-to-cart" type="button" class="btn btn-default go-cart"><span></span>加入購物車</button>
+
+						<button type="button" onclick="alert('此按鈕架構中請見諒!購物車按鈕已完成!')"><span></span>加入收藏</button>
+
+					</div>
+				</form>
+
+			</div>
+		
+		</div>
+		<!--商品資訊結束-->
+		
+	
+		<!--尾部-->
+		<footer class="footer">
+			<!-- 安全保護 銀行匯款 客戶服務 -->
+			<div class="foot">			
+				<span class="foot-left">
+					<a href="customerService.html">
+						<img src="../images/index/reg1.jpg" width="20%" height="20%">
+					</a>	
+					安全保護
+				</span>
+				<span class="foot-mid">
+					<a href="customerService.html">
+						<img src="../images/index/reg2.jpg" width="20%" height="20%">
+					</a>
+					銀行匯款
+				</span>			
+				<span class="foot-right">
+					<a href="customerService.html">
+						<img src="../images/index/reg3.jpg" width="20%" height="20%">
+					</a>	
+					客戶服務
+				</span>
+			</div>
+			<!--公告 常見問題 聯繫我們-->
+			<div class="bottom" >
+
+				<div class="bottom-mid" >
+					<div>
+						<ul>
+							<li><h5>公告</h5></li>
+							<li><a href="customerAnnouncement.html" style="color:white;text-decoration:none;">新手指南</a></li>
+							<li><a href="customerAnnouncement.html" style="color:white;text-decoration:none;">服務保障</a></li>
+							<li><a href="customerAnnouncement.html" style="color:white;text-decoration:none;">常見問題</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li><h5>常見問題</h5></li>
+							<li><a href="customerProblem.html" style="color:white;text-decoration:none;">個人戶實名驗證審核流程</a></li>
+							<li><a href="customerProblem.html" style="color:white;text-decoration:none;">有哪些現行支付方法可以購買數位資產？</a></li>
+							<li><a href="customerProblem.html" style="color:white;text-decoration:none;">如何購買數位資產？</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li><h5>聯繫我們</h5></li>
+							<li>線上客服：週一至週五(例假日除外)上午十點至下午六點</li>
+							<li>電話:(02)2722-xxxx</li>
+							<li>信箱：sky79316@gmail.com</li>
+							<li>門市地址：台北市中正區八德路X段 XXX 號</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 頁面最下 -->
+			<div class="bottom-down" align="center">
+				<i>關於LianExchanges&nbsp/&nbsp使用條款&nbsp/&nbsp隱私權政策&nbsp/&nbsp常見問題</i>
+			</div>
+
+		</footer>
+		<!--頁面结束-->
+	<script type="text/javascript" src="../js/jquery-getUrlParam.js"></script>	
+	
+	<script type="text/javascript">
+	//當前頁面處理的商品id
+	var id;
+	
+	$(document).ready(function(){
+		//獲取url中的id
+		id = $.getUrlParam("id");
+		//顯示商品詳情
+		showMoneyDetails(id);
+	});
+	
+	function showMoneyDetails(id){
+		var url = "../money/details/"+id;
+		$.ajax({
+			"url":url,
+			"type":"GET",
+			"dataType":"json",
+			"success":function(json){
+				var money = json.data;
+				if(money == null){
+					location.href = "index.html";
+					return;
+				}
+				$("#money-title").html(money.title);
+				$("#money-sell-point").html(money.sellPoint);
+				$("#money-price").html(money.price);
+				
+				$("#img1-big").attr("src",".."+money.image+"1.jpg");
+			
+				$("#img2-big").attr("src",".."+money.image+"2.jpg");
+				
+				$("#img3-big").attr("src",".."+money.image+"3.jpg");
+				
+
+
+				
+			},
+			"error":function(){
+				location.href = "index.html";
+			}
+		});
+	}
+	
+	//處理"添加到購物車"
+	$("#btn-add-to-cart").click(function(){
+		var url = "../cart/add_to_cart";
+		var gid = id;
+		var price = $("#money-price").html();
+		var count = $("#num").val();
+		var data = "gid=" + gid + "&price=" + price + "&count=" + count; // gid=xx&price=xx&count=xx
+		console.log("[data] " + data);
+		$.ajax({
+			"url":url,
+			"data":data,
+			"type":"POST",
+			"dataType":"json",
+			"success":function(json){
+				if(json.state == 200){
+					alert("添加成功!");
+					location.href = "cart.html";
+				}else{
+					alert("添加失敗!"+json.message);
+				}
+			},
+			"error":function(){
+				alert("您的登入時間已過期！請重新登入！");
+				location.href = "login.html";
+			}
+		});
+	});
+	</script>	
+	</body>
+
+</html>

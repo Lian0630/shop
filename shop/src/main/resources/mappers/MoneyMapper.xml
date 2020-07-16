@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="com.lian.shop.mapper.MoneyMapper">
+
+	
+	<!-- 根據id查詢商品詳情 -->
+	<!-- Goods findById(Long id); -->
+	<select id="findById" resultType="com.lian.shop.entity.Money">
+		SELECT
+			id,
+			title,
+			sell_point AS sellPoint,
+			price,
+			num,
+			barcode,
+			image,
+			status,
+			priority
+		FROM
+			t_money
+		WHERE
+			id=#{id} 
+	</select>
+	
+	<!-- 根據優先級獲取商品數據的列表 -->
+	<!-- List<Goods> findByPriority(Integer count); -->
+	<select id="findByPriority" resultType="com.lian.shop.entity.Money">
+		SELECT 
+		    id, title, price, image 
+		FROM 
+		    t_money 
+		WHERE 
+		    status=1 AND num>0
+		ORDER BY 
+		    priority DESC
+		LIMIT 0, #{count}
+	</select>
+</mapper>
+

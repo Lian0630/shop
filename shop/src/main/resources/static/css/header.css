@@ -1,0 +1,25 @@
+.header{
+	width:1500px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-image: url(../images/index/wallstreet2.jpg); width: 1500px; height:250px;
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+.headerSlogan{
+	margin-top: 90px;
+	margin-left: 700px;
+}
+			
+.headerImg{
+	margin-top:30px;
+	margin-left:50px;
+	height: 80px;
+}
+		
+		
+    
+    
+    	
+			 
